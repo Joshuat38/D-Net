@@ -1,9 +1,10 @@
 # Auto-generated folders and files.
-pretrain_models/*
+pretrained_models/*
 
 # Static folders and files.
 media/*
 file_lists/*
+sample_inputs/*
 
 # Variable folders and files.
 arg_files/*
