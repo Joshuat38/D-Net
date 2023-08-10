@@ -1,0 +1,23 @@
+--mode stream
+--encoder hrnet64
+--dataset kitti
+--data_path /media/joshua/Storage_C/Datasets/KITTI
+--gt_path /media/joshua/Storage_C/Datasets/KITTI/all_data/
+--filenames_file ./file_lists/eigen_test_files_with_gt.txt
+
+--video_file ./sample_inputs/highway_03.mp4
+--image_file ./sample_inputs/0000000121.png
+--camera_id 0
+
+--input_height 352
+--input_width 1216
+--batch_size 1
+--max_depth 80
+--min_depth 1e-3
+--do_kb_crop
+--colourmap plasma
+--save_directory ./pretrained_models
+--pretrained_model ./pretrained_models/hrnet64-kitti/model_checkpoint
+
+--gpu_id 1
+--num_threads 1

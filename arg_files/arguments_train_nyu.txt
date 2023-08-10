@@ -1,0 +1,36 @@
+--mode train
+--encoder swin_large_patch4_window12_384
+--dataset nyu
+--data_path /media/joshua/Storage_C/Datasets/NYU/sync
+--gt_path /media/joshua/Storage_C/Datasets/NYU/sync
+--filenames_file ./file_lists/nyudepthv2_train_files_with_gt.txt
+
+--valid_data_path /media/joshua/Storage_C/Datasets/NYU/official_splits/test/
+--valid_gt_path /media/joshua/Storage_C/Datasets/NYU/official_splits/test/
+--valid_filenames_file ./file_lists/nyudepthv2_test_files_with_gt.txt
+
+--input_height 480
+--input_width 640
+--batch_size 4
+--valid_batch_size 1
+--num_epochs 30
+--max_depth 10
+--min_depth 1e-3
+--do_random_rotate
+--degree 2.5
+--encoder_trainable
+--initial_epoch 0
+
+--save_directory ./pretrained_models
+
+--max_learning_rate 1e-4
+--min_learning_rate 1e-6
+--adam_epsilon 1e-3
+--optimiser adamW
+--regularizer_decay 1e-2
+--lr_divide_factor 25
+--final_lr_divide_factor 100
+
+--gpu_id 1
+--num_threads 2
+--mask_method eigen

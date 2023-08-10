@@ -1,0 +1,18 @@
+--mode test
+--encoder hrnet64
+--dataset kitti
+--data_path /media/joshua/Storage_C/Datasets/KITTI
+--gt_path /media/joshua/Storage_C/Datasets/KITTI/all_data/
+--filenames_file ./file_lists/eigen_test_files_with_gt.txt
+--input_height 352
+--input_width 1216
+--batch_size 1
+--max_depth 80
+--min_depth 1e-3
+--do_kb_crop
+--save_directory ./pretrained_models
+--pretrained_model ./pretrained_models/hrnet64-kitti/model_checkpoint
+
+--gpu_id 0
+--num_threads 1
+--mask_method garg
