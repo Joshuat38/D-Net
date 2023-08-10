@@ -1,5 +1,6 @@
 # Auto-generated folders and files.
 pretrained_models/*
+__pycache__
 
 # Static folders and files.
 media/*
