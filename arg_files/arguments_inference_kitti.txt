@@ -1,8 +1,8 @@
 --mode stream
 --encoder hrnet64
 --dataset kitti
---data_path /media/joshua/Storage_C/Datasets/KITTI
---gt_path /media/joshua/Storage_C/Datasets/KITTI/all_data/
+--data_path <your_path>/KITTI
+--gt_path <your_path>/KITTI/all_data/
 --filenames_file ./file_lists/eigen_test_files_with_gt.txt
 
 --video_file ./sample_inputs/highway_03.mp4
