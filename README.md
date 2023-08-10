@@ -8,7 +8,7 @@ Paper available on [IEEE Access](https://pages.github.com/](https://ieeexplore.i
 ## Sample Prediction Result for the KITTI Dataset
 ![KITTI sample image.](media/KITTI_Mode.PNG)
 
-##Note
+## Note
 All training and testing data was gathered using the approach decsribed in the [From Big to Small](https://github.com/cleinc/bts/tree/master) repository. Refer to their github for instructions and code to dowload the full training and testing datasets.
 
 ## Preparation For Usage
