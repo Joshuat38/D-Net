@@ -95,6 +95,7 @@ class VideoThread(QThread):
         self.input_transform = preprocessing_transforms(mode='inputs')
         self.used_addresses = []
         
+        # We need to initialise the args so that our models objects can use the config.
         args.encoder = params['encoder']
         args.max_depth = params['max_depth']
         args.dataset = params['dataset']
