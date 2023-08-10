@@ -1,8 +1,8 @@
 --mode test
 --encoder swin_large_patch4_window12_384
 --dataset nyu
---data_path /media/joshua/Storage_C/Datasets/NYU/official_splits/test/
---gt_path /media/joshua/Storage_C/Datasets/NYU/official_splits/test/
+--data_path <your_path>/NYU/official_splits/test/
+--gt_path <your_path>/NYU/official_splits/test/
 --filenames_file ./file_lists/nyudepthv2_test_files_with_gt.txt
 --input_height 480
 --input_width 640
