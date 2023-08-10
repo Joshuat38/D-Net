@@ -1,0 +1,9 @@
+# Auto-generated folders and files.
+pretrain_models/*
+
+# Static folders and files.
+media/*
+file_lists/*
+
+# Variable folders and files.
+arg_files/*
