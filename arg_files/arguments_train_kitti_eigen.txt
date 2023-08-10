@@ -2,7 +2,7 @@
 --encoder hrnet64
 --dataset kitti
 --data_path <your_path>/KITTI
---gt_path <your_path>/all_data
+--gt_path <your_path>/KITTI/all_data
 --filenames_file ./file_lists/eigen_train_files_with_gt.txt
 
 --valid_data_path <your_path>/KITTI
