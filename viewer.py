@@ -38,7 +38,7 @@ def convert_arg_line_to_args(arg_line):
             continue
         yield arg
 
-parser = argparse.ArgumentParser(description='AtrousNet Pytorch 1.7 Implementation.', fromfile_prefix_chars='@') # This allows for a command-line interface.
+parser = argparse.ArgumentParser(description='D-Net Pytorch 2.0 GUI Demo Implementation.', fromfile_prefix_chars='@') # This allows for a command-line interface.
 parser.convert_arg_line_to_args = convert_arg_line_to_args # Override the argparse reader when reading from a .txt file.
 
 # Model operation args
@@ -54,7 +54,7 @@ parser.add_argument('--min_depth',         type=float, help='maximum depth in es
 parser.add_argument('--colourmap',         type=str,   help='name of a matplotlib colourmap you wish to use.', default='jet')
 parser.add_argument('--do_kb_crop',                    help='if set, crop input images as kitti benchmark images', action='store_true')
 parser.add_argument('--contours',                      help='if set, displays contours', action='store_true', default=False)
-parser.add_argument('--pretrained_model',          type=str,   help='path to a pretrained model checkpoint to load', default='None')
+parser.add_argument('--pretrained_model',  type=str,   help='path to a pretrained model checkpoint to load', default='None')
 parser.add_argument('--gpu_id',            type=str,   help='specifies the gpu to use', default='0')
 
 if sys.argv.__len__() == 2: # This handls prefixes.
