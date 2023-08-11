@@ -34,22 +34,22 @@ def convert_arg_line_to_args(arg_line):
             continue
         yield arg
 
-parser = argparse.ArgumentParser(description='AtrousNet Pytorch 1.7 Implementation.', fromfile_prefix_chars='@') # This allows for a command-line interface.
+parser = argparse.ArgumentParser(description='D-Net Pytorch 2.0 Implementation.', fromfile_prefix_chars='@') # This allows for a command-line interface.
 parser.convert_arg_line_to_args = convert_arg_line_to_args # Override the argparse reader when reading from a .txt file.
 
 # Model operation args
 parser.add_argument('--mode',              type=str,   help='video or stream', default='video')
 parser.add_argument('--encoder',           type=str,   help='D-Net encoder to use: efficientnet_b0 or swin_base_patch4_window12_384', default='swin_base_patch4_window12_384')
 parser.add_argument('--dataset',           type=str,   help='dataset to test with: kitti or nyu', default='nyu')
-parser.add_argument('--data_path',                 type=str,   help='path to the data', required=False)
-parser.add_argument('--gt_path',                   type=str,   help='path to the groundtruth data', required=False)
-parser.add_argument('--filenames_file',            type=str,   help='path to the training or testing filenames text file', default='None')
+parser.add_argument('--data_path',         type=str,   help='path to the data', required=False)
+parser.add_argument('--gt_path',           type=str,   help='path to the groundtruth data', required=False)
+parser.add_argument('--filenames_file',    type=str,   help='path to the training or testing filenames text file', default='None')
 parser.add_argument('--video_file',        type=str,   help='path, filename and extension of the video to show depth for.', default='None')
 parser.add_argument('--image_file',        type=str,   help='path, filename and extension of the image to show depth for.', default='None')
 parser.add_argument('--camera_id',         type=int,   help='the id or number of the camera to stream from.', default=0)
 parser.add_argument('--input_height',      type=int,   help='input height', default=480)
 parser.add_argument('--input_width',       type=int,   help='input width',  default=640)
-parser.add_argument('--batch_size',                type=int,   help='batch size', default=4)
+parser.add_argument('--batch_size',        type=int,   help='batch size', default=4)
 parser.add_argument('--input_focal',       type=float, help='input focal length',  default=518.8579)
 parser.add_argument('--max_depth',         type=float, help='maximum depth in estimation', default=10)
 parser.add_argument('--min_depth',         type=float, help='maximum depth in estimation', default=1e-3)
@@ -58,8 +58,8 @@ parser.add_argument('--do_kb_crop',                    help='if set, crop input 
 parser.add_argument('--contours',                      help='if set, displays contours', action='store_true', default=False)
 parser.add_argument('--num_gpus',          type=int,   help='number of GPUs to use for training', default=1)
 parser.add_argument('--num_threads',       type=int,   help='number of threads to use for data loading', default=0)
-parser.add_argument('--save_directory',            type=str,   help='directory to save checkpoints and summaries', default='./models')
-parser.add_argument('--pretrained_model',          type=str,   help='path to a pretrained model checkpoint to load', default='None')
+parser.add_argument('--save_directory',    type=str,   help='directory to save checkpoints and summaries', default='./models')
+parser.add_argument('--pretrained_model',  type=str,   help='path to a pretrained model checkpoint to load', default='None')
 
 parser.add_argument('--gpu_id',            type=str,   help='specifies the gpu to use', default='0')
 
