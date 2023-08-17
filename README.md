@@ -1,6 +1,6 @@
 # D-Net
 D-Net: A Generalised and Optimised Deep Network for Monocular Depth Estimation
-Paper available on [IEEE Access](https://pages.github.com/](https://ieeexplore.ieee.org/document/9551940)https://ieeexplore.ieee.org/document/9551940)
+Paper available on [IEEE Access](https://ieeexplore.ieee.org/document/9551940)
 
 ## Sample Prediction Result for the NYUv2 Dataset
 ![NYU sample image.](media/NYU_Mode.PNG)
